@@ -1,0 +1,31 @@
+.cart {
+
+  .cart__link {
+    display: block;
+    background: url('../img/shopping-cart.svg') center no-repeat;
+    background-size: 35px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+
+  .cart__count {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+    background-color: $black;
+    border-radius: 50%;
+    color: $white;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .cart__hide {
+    @include visually-hidden;
+  }
+
+}
