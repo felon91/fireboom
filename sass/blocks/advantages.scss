@@ -1,0 +1,96 @@
+.advantages {
+  background-color: $third;
+  padding: 25px 0;
+
+  .advantages__title {
+    font-size: 36px;
+    line-height: 1.222;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .advatages__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .advantages__item {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.333;
+    text-align: center;
+    flex-basis: 30%;
+    margin: 40px 1.5%;
+    padding-top: 150px;
+
+
+    &:nth-child(1) {
+      background: url('../img/delivery-truck.svg') center 32px no-repeat;
+      background-size: 130px;
+    }
+
+    &:nth-child(2) {
+      background: url('../img/call-center-worker-with-headset.svg') center top no-repeat;
+      background-size: 130px;
+    }
+
+    &:nth-child(3) {
+      background: url('../img/badge.svg') center top no-repeat;
+      background-size: 130px;
+    }
+
+    &:nth-child(4) {
+      background: url('../img/confetti.svg') center top no-repeat;
+      background-size: 130px;
+    }
+
+    &:nth-child(5) {
+      background: url('../img/agreement.svg') center top no-repeat;
+      background-size: 92px;
+    }
+
+    &:nth-child(6) {
+      background: url('../img/premium.svg') center top no-repeat;
+      background-size: 130px;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .advantages {
+
+    .advantages__title {
+      font-size: 30px;
+    }
+
+    .advantages__item {
+      flex-basis: 45%;
+      margin: 25px 2.5%;
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .advantages {
+
+    .advatages__list {
+      flex-direction: column;
+    }
+
+    .advantages__item {
+      flex-basis: auto;
+      margin: 25px 0;
+    }
+
+  }
+
+}

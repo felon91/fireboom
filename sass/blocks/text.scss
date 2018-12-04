@@ -1,0 +1,154 @@
+.text {
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    margin: 25px 0;
+
+    + .text__img {
+      margin-top: 0;
+    }
+
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .text__img {
+    display: block;
+    margin: 10px 20px 10px 0;
+    float: left;
+    max-width: 100%;
+  }
+
+  p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  b {
+    font-weight: 700;
+  }
+  
+  a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary;
+    font-weight: 700;
+    text-decoration: underline;
+    
+    &:hover {
+      text-decoration: none;
+    }
+    
+  }
+
+  ul, ol {
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+
+    li {
+      margin: 5px 0;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-left: 30px;
+      position: relative;
+    }
+
+  }
+
+  ul {
+
+    li {
+
+      &::before {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        background-color: $second;
+        content: '';
+        width: 6px;
+        height: 6px;
+      }
+
+    }
+
+  }
+
+  ol {
+    counter-reset: olItemCounter;
+
+    li {
+      
+      &::before {
+        counter-increment: olItemCounter;
+        content: counter(olItemCounter);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: $second;
+        color: $white;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+    }
+
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .text {
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .text__img {
+      float: none;
+      margin: 25px auto;
+    }
+
+  }
+
+}
