@@ -1,8 +1,6 @@
 .menu {
   background-color: $primary;
-  box-shadow:
-          inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35),
-          0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
 
   .menu__list {
     margin: 0;
