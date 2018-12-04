@@ -1,0 +1,168 @@
+.products {
+
+  .products__title {
+    font-size: 30px;
+    line-height: 1.333;
+    font-weight: 700;
+    margin: 25px 0;
+  }
+
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -1.5%;
+    list-style: none;
+  }
+
+  .products__element {
+    border: 1px solid $primary;
+    box-shadow: 0 3px 7px 0 $third;
+    border-radius: 10px;
+    flex-basis: 47%;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 1.5% 24px 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .products__hit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: $red;
+    color: $white;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    transform: translate(37px, -24px) rotate(45deg);
+    padding: 18px 27px 7px;
+    font-weight: 700;
+  }
+
+  .products__img {
+    margin: auto;
+
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+  .products__name {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+
+  .products__block {
+    display: flex;
+  }
+
+  .products__specification {
+    flex-basis: 220px;
+  }
+
+  .products__price {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 135px;
+  }
+
+  .products__old-price {
+    font-size: 16px;
+    line-height: 1.4;
+    text-decoration: line-through;
+    font-weight: 700;
+  }
+
+  .products__new-price {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $red;
+  }
+
+  .products__count {
+    max-width: 100px;
+    margin: 5px auto 0;
+  }
+
+  .products__buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      width: calc(50% - 8.5px);
+      margin-bottom: 17px;
+      margin-top: 17px;
+
+      &:first-child {
+        margin-right: 17px;
+      }
+
+    }
+
+  }
+
+  .products__show-more {
+    width: 265px;
+    margin: 0 auto 25px;
+  }
+
+  .products__more {
+    @include button($second);
+  }
+
+}
+
+@media (max-width: 960px) {
+
+  .products {
+
+    .products__list {
+      margin: 0;
+    }
+
+    .products__element {
+      flex-basis: 100%;
+      margin: 0 0 24px 0;
+    }
+
+    .products__specification {
+      flex-basis: 50%;
+    }
+
+    .products__price {
+      flex-basis: 50%;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .products {
+
+    .products__title {
+      font-size: 24px;
+    }
+
+  }
+
+}

@@ -1,0 +1,88 @@
+.counter {
+  display: flex;
+  justify-content: center;
+
+  span, label {
+    @include visually-hidden;
+  }
+
+  .counter__minus, .counter__plus {
+    position: relative;
+    width: 25px;
+    border-radius: 5px 0 0 5px;
+    background-color: $primary;
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition-duration: 500ms;
+    transition-property: background-color;
+
+    &::after, &::before {
+      background-color: $white;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: $second;
+    }
+
+    &:focus {
+      background-color: darken($primary, 15%);
+    }
+
+    &:active {
+      background-color: darken($primary, 5%);
+    }
+
+  }
+
+  .counter__minus {
+
+    &::after {
+      width: 12px;
+      height: 2px;
+    }
+
+  }
+
+  .counter__plus {
+    border-radius: 0 5px 5px 0;
+
+    &::after {
+      width: 12px;
+      height: 2px;
+    }
+
+    &::before {
+      width: 2px;
+      height: 12px;
+    }
+
+  }
+
+  .counter__field {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    text-align: center;
+    font-family: inherit;
+    width: calc(100% - 52px);
+    background-color: $white;
+
+    &:disabled {
+      color: $black;
+    }
+
+  }
+
+}

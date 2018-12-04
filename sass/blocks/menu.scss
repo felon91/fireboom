@@ -23,9 +23,18 @@
     display: block;
     transition-duration: 500ms;
     transition-property: background-color;
+    outline: none;
 
     &:hover {
       background-color: $second;
+    }
+
+    &:focus {
+      background-color: darken($primary, 15%);
+    }
+
+    &:active {
+      background-color: darken($primary, 5%);
     }
 
   }

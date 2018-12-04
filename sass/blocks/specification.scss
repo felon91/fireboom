@@ -1,0 +1,25 @@
+.specification {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .specification__element {
+    font-size: 14px;
+    line-height: 1.429;
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      width: 6px;
+      height: 6px;
+      content: '';
+      background-color: $second;
+    }
+
+  }
+
+}

@@ -44,3 +44,74 @@
   clip: rect(0,0,0,0);
   overflow: hidden;
 }
+
+@mixin button($bgcolor) {
+  border: none;
+  background: none;
+  appearance: none;
+  font-size: 16px;
+  color: $white;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  background-color: $bgcolor;
+  border-radius: 5px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  padding: 4px 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 500ms;
+  transition-property: background-color;
+
+  &:hover {
+    background-color: $second;
+  }
+
+  &:focus {
+    background-color: darken($primary, 15%);
+  }
+
+  &:active {
+    background-color: darken($primary, 5%);
+  }
+
+}
+
+@mixin button-more($bgcolor) {
+  font-size: 18px;
+  line-height: 1.333;
+  text-align: center;
+  color: $primary;
+  background: $white;
+  appearance: none;
+  font-weight: 700;
+  border: 2px solid $primary;
+  border-radius: 5px;
+  box-shadow: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 500ms;
+  transition-property: background-color, color;
+  padding: 9px 0 10px;
+
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:focus {
+    color: darken($primary, 15%);
+    border-color: darken($primary, 15%);
+  }
+
+  &:active {
+    border-color: darken($primary, 5%);
+    color: darken($primary, 5%);
+  }
+
+}

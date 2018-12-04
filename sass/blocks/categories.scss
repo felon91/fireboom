@@ -1,0 +1,192 @@
+.categories {
+
+  .categories__list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+
+  .categories__item {
+
+    a {
+      font-size: 18px;
+      line-height: 1.333;
+      color: $black;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-block;
+      transition-duration: 500ms;
+      transition-property: color;
+      padding: 12px 0 12px 47px;
+
+      &:hover {
+        color: $primary;
+      }
+
+    }
+
+  }
+
+  .categories__small {
+
+    a {
+      background: url('../img/small.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__medium {
+
+    a {
+      background: url('../img/medium.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__big {
+
+    a {
+      background: url('../img/big.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__super-big {
+
+    a {
+      background: url('../img/super-big.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__elit {
+
+    a {
+      background: url('../img/elit.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__fountains {
+
+    a {
+      background: url('../img/fountains.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__rocket {
+
+    a {
+      background: url('../img/rocket.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__festival {
+
+    a {
+      background: url('../img/festival.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__roman-candles {
+
+    a {
+      background: url('../img/roman-candles.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__sparklers {
+
+    a {
+      background: url('../img/sparklers.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__petard {
+
+    a {
+      background: url('../img/petard.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+  .categories__other {
+
+    a {
+      background: url('../img/other.svg') left center no-repeat;
+      background-size: 33px;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .categories {
+
+    .categories__item {
+
+      a {
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .categories {
+
+    .categories__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .categories__item {
+      width: 49%;
+    }
+
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .categories {
+
+    .categories__item {
+      width: 100%;
+
+      a {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+    }
+
+  }
+
+}

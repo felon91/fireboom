@@ -76,7 +76,10 @@
 						<p class="slider__warning">Акция действует с 10 по 29 декабря 2018 года</p>
 					</div>
 					<div class="slider__right">
-						<img src="img/2019.jpg" alt="Скидка до 20% к Новому году">
+						<picture>
+							<source type="image/webp" srcset="img/2019.webp">
+							<img src="img/2019.jpg" alt="Скидка до 20% к Новому году">
+						</picture>
 					</div>
 				</div>
 				<div class="slider__content">
@@ -86,7 +89,10 @@
 						<p class="slider__warning">Акция действует с 10 по 29 декабря 2018 года</p>
 					</div>
 					<div class="slider__right">
-						<img src="img/2019.jpg" alt="Скидка до 20% к Новому году">
+						<picture>
+							<source type="image/webp" srcset="img/2019.webp">
+							<img src="img/2019.jpg" alt="Скидка до 20% к Новому году">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -96,52 +102,55 @@
 	<main class="content wrap">
 		<aside class="content__left categories">
 			<ul class="categories__list">
-				<li class="categories__item">
+				<li class="categories__item categories__small">
 					<a href="#">Малые батареи салютов</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__medium">
 					<a href="#">Средние батареи салютов</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__big">
 					<a href="#">Большие батареи салютов</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__super-big">
 					<a href="#">Супер большие батареи салютов</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__elit">
 					<a href="#">Элитные салюты</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__fountains">
 					<a href="#">Фонтаны наземные и свечи в торт</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__rocket">
 					<a href="#">Ракеты</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__festival">
 					<a href="#">Фестивальные шары</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__roman-candles">
 					<a href="#">Римские свечи</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__sparklers">
 					<a href="#">Бенгальские огни</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__petard">
 					<a href="#">Петарды, жуки, осы, цирковницы</a>
 				</li>
-				<li class="categories__item">
+				<li class="categories__item categories__other">
 					<a href="#">Прочие товары</a>
 				</li>
 			</ul>
 		</aside>
-		<section class=" content__right products">
-			<h2 class="products__title">Популярные товары</h2>
+		<section class="content__right products">
+			<h3 class="products__title">Популярные товары</h3>
 			<ul class="products__list">
 				<li class="products__element">
-					<p class="products__hit">Хит продаж</p>
+					<p class="products__hit">Хит<br> продаж</p>
 					<figure class="products__img">
 						<a href="#">
-							<img src="img/product.jpg" alt="Буря в пустыне">
+							<picture>
+								<source type="image/webp" srcset="img/product.webp">
+								<img src="img/product.jpg" alt="Буря в пустыне">
+							</picture>
 						</a>
 					</figure>
 					<p class="products__name">Буря в пустыне</p>
@@ -157,7 +166,253 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<input type="text" value="1" min="1" max="99">
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product2.webp">
+								<img src="img/product2.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product.webp">
+								<img src="img/product.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product2.webp">
+								<img src="img/product2.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product.webp">
+								<img src="img/product.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product2.webp">
+								<img src="img/product2.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product.webp">
+								<img src="img/product.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<button class="counter__plus"><span>Плюс</span></button>
+							</li>
+						</ul>
+					</div>
+					<div class="products__buttons">
+						<button class="button">Видео</button>
+						<button class="button">В корзину</button>
+					</div>
+					<a class="products__more button" href="#">Подробнее</a>
+				</li>
+				<li class="products__element">
+					<p class="products__hit">Хит<br> продаж</p>
+					<figure class="products__img">
+						<a href="#">
+							<picture>
+								<source type="image/webp" srcset="img/product2.webp">
+								<img src="img/product2.jpg" alt="Буря в пустыне">
+							</picture>
+						</a>
+					</figure>
+					<p class="products__name">Буря в пустыне</p>
+					<div class="products__block">
+						<ul class="products__specification specification">
+							<li class="specification__element">Залпы - 100 шт</li>
+							<li class="specification__element">Высота - 40 м</li>
+							<li class="specification__element">Калибр - 30 мм</li>
+							<li class="specification__element">Время - 20 сек</li>
+						</ul>
+						<ul class="products__price">
+							<li class="products__old-price">150 руб</li>
+							<li class="products__new-price">99 руб</li>
+							<li class="products__count counter">
+								<button class="counter__minus"><span>Минус</span></button>
+								<label for="counter1">Количество товаров:</label>
+								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -169,6 +424,25 @@
 					<a class="products__more button" href="#">Подробнее</a>
 				</li>
 			</ul>
+			<p class="products__show-more">
+				<button class="show-more">Показать еще</button>
+			</p>
+		</section>
+		<section class="text">
+			<h1>Купить салюты и фейерверки в Минске</h1>
+			<p>Любой праздник будет ярче, если дополнить его современной пиротехникой – так ваше торжество 100% запомнится и вам, и всем присутствующим. Хотите купить салюты, фейерверки в Минске? Интернет-магазин fireboom.by к вашим услугам! У нас вы найдете большой выбор бенгальских огней, фестивальных шаров, петард, а также римские свечи, ракеты и салюты разных размеров. С таким ассортиментом вы подготовитесь к любому празднику – от небольшого дня рождения в кругу близких до масштабного торжества. К тому же, покупая в Минске салюты и фейерверки от Fireboom, вы сразу же можете заказать их оперативную доставку в любую точку страны. И все это – за приятную цену!</p>
+			<h2>Как выбрать пиротехнику на праздник</h2>
+			<p>Выбирая пиротехнику, нужно определиться с несколькими параметрами:</p>
+			<ol>
+				<li>Тематика праздника – на детский день рождения и на корпоратив крупной компании, скорее всего, будут нужны разные салюты.</li>
+				<li>Наличие свободного места для установки и запуска пиротехники.</li>
+				<li>Бюджет, который вы готовы выделить на такую покупку.</li>
+			</ol>
+			<p>Зная ответы на эти вопросы, вы сможете выбрать в нашем каталоге сертифицированную пиротехнику, которая будет максимально соответствовать ситуации. Если вы впервые покупаете салюты и фейерверки в Минске и не разбираетесь в характеристиках такой продукции, наши менеджеры проконсультируют вас и помогут сделать правильный выбор. Также вам может помочь наш раздел «Часто задаваемые вопросы», который вы найдете, прокрутив эту страницу вниз – там мы собрали всю важную информацию, которой чаще всего интересуются наши покупатели. Не нашли нужного ответа? Тогда просто позвоните.</p>
+			<h2>Хотите купить недорогой салют?</h2>
+			<p>Мечтаете о ярком и шумном празднике, но не располагаете бюджетом, необходимым для приобретения большого салюта? Из этой ситуации есть выход! У нас можно недорого <a href="#">купить петарды</a> или <a href="#">бенгальские огни</a>, которые станут украшением вашего торжества. Они не требуют ни больших затрат, ни большого пространства, зато смогут впечатлить гостей и станут для них неожиданным сюрпризом. Также обратите внимание на малые батареи салютов – возможно, это именно то, что вы искали.</p>
+			<p>У вас обратная ситуация: вам нужно что-то грандиозное и вы готовы потратиться на такую покупку? Мы с удовольствием предложим вам элитные салюты или подберем целый набор пиротехники, с помощью которой вы сможете устроить настоящее шоу. Ведь важные праздники должны быть запоминающимися!</p>
+			<p>В случае необходимости наши специалисты не только проконсультируют вас в процессе выбора пиротехники, но и помогут с установкой и запуском больших салютов. С fireboom.by больше не нужно думать, где купить салюты, фейерверки в Минске – позвоните нам и мы найдем решение для любой, даже нестандартной ситуации.</p>
 		</section>
 	</main>
 </div>
