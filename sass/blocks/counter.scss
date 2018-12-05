@@ -78,6 +78,9 @@
     font-family: inherit;
     width: calc(100% - 52px);
     background-color: $white;
+    appearance: none;
+    opacity: 1;
+    border-radius: 0;
 
     &:disabled {
       color: $black;
