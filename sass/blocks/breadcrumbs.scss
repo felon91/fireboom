@@ -1,0 +1,26 @@
+.breadcrumbs {
+
+  .breadcrumbs__element {
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 1.333;
+  }
+
+  .breadcrumbs__link {
+    color: $primary;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+  span {
+    margin: 0 3px;
+  }
+
+  .breadcrumbs__current {
+    margin: 0;
+  }
+
+}
