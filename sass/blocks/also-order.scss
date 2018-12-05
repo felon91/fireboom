@@ -1,0 +1,32 @@
+.also-order {
+  background-color: $white;
+
+  .also-order__title {
+    font-size: 30px;
+    line-height: 1.333;
+    font-weight: 700;
+    margin: 25px 0;
+  }
+
+  .also-order__products {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .also-order {
+    background-color: $white;
+
+    .also-order__title {
+      font-size: 24px;
+    }
+
+  }
+
+}

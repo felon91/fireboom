@@ -1,0 +1,25 @@
+.tovar {
+
+  .tovar__description {
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    h1 {
+      text-align: left;
+    }
+
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .tovar {
+
+    .tovar__element {
+      margin-bottom: 0;
+    }
+
+  }
+
+}

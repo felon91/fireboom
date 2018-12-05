@@ -1,0 +1,132 @@
+.product {
+  border: 1px solid $primary;
+  box-shadow: 0 3px 7px 0 $third;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 25px 0;
+  list-style: none;
+  display: flex;
+
+  .product__left {
+    flex-basis: 280px;
+    margin-right: 30px;
+    align-self: flex-end;
+  }
+
+  .product__right {
+    flex-basis: calc(100% - 310px);
+    align-self: flex-end;
+  }
+
+  .product__video {
+    margin: 25px 0 0;
+    @include adaptive-video;
+  }
+
+  .product__hit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $red;
+    color: $white;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    transform: translate(37px, -24px) rotate(45deg);
+    padding: 18px 27px 7px;
+    font-weight: 700;
+  }
+
+  .product__img {
+    //margin: auto;
+
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+  .product__specification {
+    flex-basis: 220px;
+  }
+
+  .product__price {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 135px;
+  }
+
+  .product__old-price {
+    font-size: 20px;
+    line-height: 1.4;
+    text-decoration: line-through;
+    font-weight: 700;
+  }
+
+  .product__new-price {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $red;
+    margin: 5px 0 20px;
+  }
+
+  .product__count {
+    max-width: 100px;
+    margin: 5px auto 25px;
+  }
+
+  .product__buttons {
+
+    button {
+      width: 100%;
+      margin-top: 17px;
+    }
+
+  }
+
+  .product__haracter {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 960px) {
+
+  .product {
+    padding: 15px 20px;
+    flex-direction: column;
+
+    .product__left {
+      flex-basis: auto;
+      margin-right: 0;
+      align-self: flex-start;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .product__right {
+      flex-basis: auto;
+      align-self: flex-start;
+      width: 100%;
+    }
+
+  }
+
+}

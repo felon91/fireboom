@@ -37,4 +37,16 @@
 
   }
 
+  .content--single {
+
+    .content__right {
+      order: 1;
+    }
+
+    .content__left {
+      order: 2;
+    }
+
+  }
+
 }
