@@ -14,6 +14,8 @@ $(document).ready(function() {
     }
   });
 
+  $('.mask').mask("+375 (99) 999-99-99");
+
   const faqQuestion = document.querySelectorAll('.faq__item');
 
   if(faqQuestion) {

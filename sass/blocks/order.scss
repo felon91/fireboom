@@ -54,4 +54,22 @@
 
   }
 
+
+  .order__form {
+    margin: 35px auto 70px;
+    max-width: 615px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .order {
+
+    .order__title {
+      font-size: 30px;
+    }
+
+  }
+
 }

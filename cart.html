@@ -119,11 +119,12 @@
 				</tr>
 			</table>
 		</div>
-		<form class="cart__form form">
+		<form class="order__form form">
+			<h3 class="form__title">Форма заказа</h3>
 			<label for="form-name">Ваше имя</label>
 			<input id="form-name" type="text" name="name" placeholder="Ваше имя">
 			<label for="form-name">Ваш телефон</label>
-			<input id="form-phone" type="phone" name="phone" placeholder="Ваш телефон*">
+			<input class="mask" id="form-phone" type="tel" name="phone" placeholder="Ваш телефон*">
 			<label for="form-name">Email</label>
 			<input id="form-email" type="email" name="email" placeholder="Email">
 			<label for="form-address">Адрес доставки</label>
@@ -131,8 +132,8 @@
 			<label for="form-comment">Комментарий</label>
 			<textarea id="form-comment" name="comment" placeholder="Комментарий"></textarea>
 			<p>Копия заказа придет на указанный вами email.</p>
-			<p>Доставка является бесплатной, если стоимость вашего заказа более 40 руб.</p>
-			<p>Иначе доставка платная. Сумма доставки 3 руб.</p>
+			<p><b>Доставка является бесплатной, если стоимость вашего заказа более 40 руб.</b></p>
+			<p><b>Иначе доставка платная. Сумма доставки 3 руб.</b></p>
 			<button type="submit">Оформить заказ</button>
 		</form>
 	</section>
