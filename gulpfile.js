@@ -14,6 +14,7 @@ global.$ = {
   path: {
     config: require('./gulp/config.js'),
     jquery: './js/jquery.js',
+    polyfill: './js/polyfill.js',
     js: './js/**/*.js',
   }
 };

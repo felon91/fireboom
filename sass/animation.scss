@@ -1,0 +1,26 @@
+@keyframes show {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes hamb-after {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes hamb-before {
+  0% {
+    transform: rotate(0) translate(0, 0);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+}

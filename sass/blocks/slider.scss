@@ -72,6 +72,11 @@
     .slider__left {
       background: none;
       padding-bottom: 10px;
+      flex-basis: auto;
+    }
+
+    .slider__right {
+      flex-basis: auto;
     }
 
     .slider__content {

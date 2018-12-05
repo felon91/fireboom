@@ -27,3 +27,21 @@
   }
 
 }
+
+.phone--white {
+
+  &::before {
+    display: none;
+  }
+
+  p {
+    color: $white;
+    font-size: 24px;
+  }
+
+  a {
+    color: $white;
+  }
+
+
+}

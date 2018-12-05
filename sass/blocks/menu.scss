@@ -11,6 +11,39 @@
 
   .menu__hamburger {
     display: none;
+    width: 45px;
+    height: 32px;
+    margin-left: auto;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+
+    span {
+      height: 5px;
+      width: 100%;
+      display: block;
+      background-color: $white;
+      margin: 8px 0;
+    }
+
+    &::after {
+      content: '';
+      background-color: $white;
+      height: 5px;
+      width: 100%;
+      display: block;
+    }
+
+    &::before {
+      content: '';
+      background-color: $white;
+      height: 5px;
+      width: 100%;
+      display: block;
+    }
+
   }
 
   .menu__link {
@@ -64,43 +97,46 @@
 
     .menu__list {
       display: none;
+      margin-top: 15px;
+    }
+
+    .menu__link  {
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
 
     .menu__hamburger {
       display: block;
-      width: 45px;
-      height: 32px;
-      margin-left: auto;
-      border: none;
-      padding: 0;
-      background-color: transparent;
-      appearance: none;
-      cursor: pointer;
+    }
+
+  }
+
+  .menu--active {
+
+    .menu__hamburger {
 
       span {
-        height: 5px;
-        width: 100%;
-        display: block;
-        background-color: $white;
-        margin: 8px 0;
+        display: none;
       }
 
       &::after {
-        content: '';
-        background-color: $white;
-        height: 5px;
-        width: 100%;
-        display: block;
+        transform: rotate(45deg);
+        animation-name: hamb-after;
+        animation-duration: 500ms;
       }
 
       &::before {
-        content: '';
-        background-color: $white;
-        height: 5px;
-        width: 100%;
-        display: block;
+        transform: rotate(-45deg) translate(-3px, 3px);
+        animation-name: hamb-before;
+        animation-duration: 500ms;
       }
-
+      
+    }
+    
+    .menu__list {
+      display: block;
+      animation-name: show;
+      animation-duration: 500ms;
     }
 
   }

@@ -5,6 +5,7 @@
 	<title>Fireboom</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/all.min.js"></script>
@@ -15,7 +16,7 @@
 		<div class="header__wrap wrap">
 			<div class="header__logo logo">
 				<a href="#">
-					<img width="241" src="img/logo.svg" alt="Fireboom купить салют в Минске">
+					<img width="241" height="70" src="img/logo.svg" alt="Fireboom купить салют в Минске">
 				</a>
 			</div>
 			<div class="header__phone phone">
@@ -166,8 +167,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter">Количество товаров:</label>
+								<input id="counter" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -202,7 +203,7 @@
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
 								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<input id="counter1" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -236,8 +237,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter2">Количество товаров:</label>
+								<input id="counter2" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -271,8 +272,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter3">Количество товаров:</label>
+								<input id="counter3" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -306,8 +307,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter4">Количество товаров:</label>
+								<input id="counter4" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -341,8 +342,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter5">Количество товаров:</label>
+								<input id="counter5" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -376,8 +377,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter6">Количество товаров:</label>
+								<input id="counter6" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -411,8 +412,8 @@
 							<li class="products__new-price">99 руб</li>
 							<li class="products__count counter">
 								<button class="counter__minus"><span>Минус</span></button>
-								<label for="counter1">Количество товаров:</label>
-								<input id="counter1" class="counter__field" disabled type="text" value="1" min="1" max="99">
+								<label for="counter7">Количество товаров:</label>
+								<input id="counter7" class="counter__field" disabled type="text" value="1">
 								<button class="counter__plus"><span>Плюс</span></button>
 							</li>
 						</ul>
@@ -464,11 +465,158 @@
 		<div class="faq__wrap wrap">
 			<h3 class="faq__title">Частые вопросы</h3>
 			<ul class="faq__list">
-				<li class="faq__item">Доставка по всей стране в любое время и в кратчайшие сроки.</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Сработает ли салют?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Мы продаем исключительно качественную и сертифицированную продукцию, но в 0.01% случаев бывает так, что салют не срабатывает. Если это произошло, мы вернём вам деньги или заменим товар на другой.</p>
+				</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Какая техника безопасности?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Перед тем, как начать запуск салюта, ракет, фонтанов и т.д., нужно убедиться, что на расстоянии 30 метров от них нет никаких крупных посторонних предметов, деревьев или зданий, которые могут помешать запуску пиротехники. Перед поджогом салют нужно укрепить подручными средствами, чтобы не произошло его опрокидывание, затем поджечь фитиль на расстоянии вытянутой руки и удалиться на безопасное расстояние. Время горения фильтра любой нашей продукции – 5-7 секунд. Более подробную информацию уточняйте у менеджеров.</p>
+				</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Что такое калибр?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Калибр – это диаметр трубы, в которой находится заряд. От калибра зависит многое – например, цена салюта, высота полета залпа, а также радиус взрыва залпа в небе.</p>
+				</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Как заказать?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Чтобы заказать салют, вы можете позвонить нашим менеджерам по этим телефонам: +123456789. Они подробно расскажут о нашей продукции и оформят заказ. Также вы можете воспользоваться нашей корзиной на сайте: после добавления товара в корзину вам нужно будет указать имя, телефон, адрес и e-mail (по желанию) в форме заказа, а после этого – оформить заявку соответствующей кнопкой. Наши менеджеры свяжутся с вами в ближайшее время для подтверждения заказа и его отправки по указанному адресу.</p>
+				</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Смогу ли я сам(а) поджечь салют, если я ни разу этого не делал(а) раньше?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Мы продаем пиротехнику бытового назначения. То есть запуск салюта производится очень легко даже при отсутствии опыта.</p>
+				</li>
+				<li class="faq__item">
+					<button class="faq__question">
+						<svg class="faq__inf">
+							<use xlink:href="img/symbol/sprite.svg#information"></use>
+						</svg>
+						<span>Можно ли получить скидку?</span>
+						<svg class="faq__arrow">
+							<use xlink:href="img/symbol/sprite.svg#arrow-down-sign-to-navigate"></use>
+						</svg>
+					</button>
+					<p class="faq__answer">Скидки рассматриваются индивидуально в зависимости от вашего торжества. Расскажите нашим менеджерам о вашем предстоящем празднике и мы обязательно договоримся!</p>
+				</li>
 			</ul>
 		</div>
 	</section>
+	<section class="testimonials wrap">
+		<h3 class="testimonials__title">Отзывы</h3>
+		<ul class="testimonials__list">
+			<li class="testimonials__item">
+				<figure class="testimonials__img">
+					<picture>
+						<source type="image/webp" srcset="img/otziv.webp">
+						<img src="img/otziv.jpg" alt="Отзыв Екатерины">
+					</picture>
+					<figcaption class="testimonials__name">Екатерина</figcaption>
+				</figure>
+				<div class="testimonials__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet, assumenda atque dolorem dolores ducimus eveniet incidunt inventore nemo odio quae quo sint vitae voluptatibus. Est porro quis ratione.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt, dolorem esse exercitationem fugiat illo ipsum minima molestias obcaecati ullam! Deleniti, doloribus enim iste laboriosam nihil reiciendis repellat tenetur vitae?</p>
+					<p><a href="#">https://vk.com/id17974520</a></p>
+				</div>
+			</li>
+			<li class="testimonials__item">
+				<figure class="testimonials__img">
+					<picture>
+						<source type="image/webp" srcset="img/otziv2.webp">
+						<img src="img/otziv2.jpg" alt="Отзыв Владимира">
+					</picture>
+					<figcaption class="testimonials__name">Владимир</figcaption>
+				</figure>
+				<div class="testimonials__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet, assumenda atque dolorem dolores ducimus eveniet incidunt inventore nemo odio quae quo sint vitae voluptatibus. Est porro quis ratione.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt, dolorem esse exercitationem fugiat illo ipsum minima molestias obcaecati ullam! Deleniti, doloribus enim iste laboriosam nihil reiciendis repellat tenetur vitae?</p>
+					<p><a href="#">https://vk.com/id17974520</a></p>
+				</div>
+			</li>
+		</ul>
+		<p class="testimonials__show-more">
+			<button class="show-more">Показать еще</button>
+		</p>
+	</section>
 	<!--noindex-->
-</div>/
+	<footer class="footer">
+		<div class="footer__wrap wrap">
+			<div class="footer__logo logo">
+				<a href="#">
+					<img width="241" height="70" src="img/logo-white.svg" alt="Fireboom купить салют в Минске">
+				</a>
+			</div>
+			<ul class="footer__menu">
+				<li class="footer__element">
+					<a href="#">Главная</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Каталог</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Оптовым клиентам</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Проведения торжеств</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Скидки и акции</a>
+				</li>
+				<li class="footer__element">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="footer__phone phone phone--white">
+				<p>
+					<a href="tel:80291234567">+375291234567</a>
+				</p>
+				<p>
+					<a href="tel:80291234567">+375291234567</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
 </body>
 </html>

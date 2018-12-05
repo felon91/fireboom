@@ -5,9 +5,9 @@
 @import "fonts";
 @import "mixins";
 @import "core";
+@import "animation";
 
 @import "blocks/header";
-@import "blocks/logo";
 @import "blocks/phone";
 @import "blocks/cart";
 @import "blocks/menu";
@@ -22,3 +22,6 @@
 @import "blocks/show-more";
 @import "blocks/text";
 @import "blocks/advantages";
+@import "blocks/faq";
+@import "blocks/testimonials";
+@import "blocks/footer";

@@ -1,0 +1,178 @@
+.faq {
+  background-color: $third;
+
+  .faq__wrap {
+    padding-top: 1px;
+    padding-bottom: 25px;
+  }
+
+  .faq__title {
+    font-size: 36px;
+    line-height: 1.222;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .faq__list {
+    padding: 0;
+    margin: 25px 0;
+    list-style: none;
+  }
+
+  .faq__item {
+    margin: 20px 0;
+    background-color: $white;
+    border: 1px solid $second;
+    border-radius: 10px;
+
+    &:hover {
+
+      .faq__question {
+        background-color: $second;
+        color: $white;
+
+        .faq__inf {
+          fill: $white;
+        }
+
+        .faq__arrow {
+          fill: $white;
+        }
+
+      }
+
+    }
+
+  }
+
+  .faq__question {
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    padding: 13px 0 14px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.333;
+    font-weight: 700;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 500ms;
+    transition-property: background-color, color;
+
+    span {
+      align-self: center;
+      margin-right: 15px;
+    }
+
+    &:focus {
+      background-color: $second;
+      color: $white;
+
+      .faq__inf, .faq__arrow {
+        fill: $white;
+      }
+
+    }
+
+  }
+
+  .faq__inf {
+    fill: $second;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 25px;
+    transition-duration: 500ms;
+    transition-property: fill;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .faq__arrow {
+    fill: $second;
+    width: 34px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 25px;
+    transition-duration: 500ms;
+    transition-property: fill;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .faq__answer {
+    margin: 5px 15px 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $white;
+    display: none;
+  }
+
+  .faq__item--active {
+    background-color: $second;
+
+    .faq__question {
+      color: $white;
+    }
+
+    .faq__inf {
+      fill: $white;
+    }
+
+    .faq__arrow {
+      fill: $white;
+      transform: rotate(180deg);
+    }
+
+    .faq__answer {
+      animation-name: show;
+      animation-duration: 500ms;
+      display: block;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .faq {
+
+    .faq__title {
+      font-size: 30px;
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .faq {
+    
+    .faq__inf {
+      display: none;
+    }
+
+    .faq__arrow {
+      margin-right: 15px;
+    }
+
+    .faq__question {
+      font-size: 16px;
+
+      span {
+        margin-left: 15px;
+      }
+
+    }
+    
+  }
+  
+}

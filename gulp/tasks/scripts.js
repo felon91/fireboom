@@ -1,5 +1,6 @@
 const jsfiles = [
   $.path.jquery,
+  $.path.polyfill,
   $.path.js,
 ];
 

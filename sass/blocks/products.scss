@@ -11,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 -1.5%;
+    margin: 0;
     list-style: none;
   }
 
@@ -19,21 +19,27 @@
     border: 1px solid $primary;
     box-shadow: 0 3px 7px 0 $third;
     border-radius: 10px;
-    flex-basis: 47%;
+    flex-basis: auto;
+    width: 48.5%;
     box-sizing: border-box;
     padding: 20px;
     position: relative;
     overflow: hidden;
-    margin: 0 1.5% 24px 1.5%;
+    margin: 0 3% 24px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
   }
 
   .products__hit {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     background-color: $red;
     color: $white;
     font-size: 14px;
@@ -45,7 +51,7 @@
   }
 
   .products__img {
-    margin: auto;
+    //margin: auto;
 
     a {
       display: block;
@@ -141,6 +147,7 @@
     .products__element {
       flex-basis: 100%;
       margin: 0 0 24px 0;
+      max-width: 100%;
     }
 
     .products__specification {
