@@ -1,0 +1,54 @@
+.table {
+
+  tr {
+
+    .table__number {
+      max-width: 65px;
+      min-width: 40px;
+    }
+
+    .table__name {
+      text-align: left;
+      padding-left: 15px;
+      max-width: 460px;
+      min-width: 220px;
+    }
+
+    .table__price {
+      max-width: 110px;
+      min-width: 80px;
+    }
+
+    .table__count {
+      max-width: 160px;
+      min-width: 70px;
+    }
+
+    .table__summa {
+      max-width: 200px;
+      min-width: 115px;
+    }
+
+    .table__del {
+      max-width: 140px;
+      min-width: 95px;
+    }
+
+    .table__itog {
+      text-align: right;
+      font-size: 24px;
+      font-weight: 700;
+      padding-right: 20px;
+    }
+
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .table {
+    min-width: 640px;
+  }
+
+}
