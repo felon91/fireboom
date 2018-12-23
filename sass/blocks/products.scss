@@ -116,16 +116,15 @@
       width: calc(50% - 8.5px);
       margin-bottom: 17px;
       margin-top: 17px;
+    }
 
-      &:first-child {
-        margin-right: 17px;
-      }
-
+    .button-video {
+      margin-right: 17px;
     }
 
   }
 
-  .products__show-more {
+  .products__show-more, .malinky-load-more {
     width: 265px;
     margin: 0 auto 35px;
   }

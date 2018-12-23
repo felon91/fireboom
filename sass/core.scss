@@ -23,3 +23,7 @@ body {
 .wrap {
 	@include min-max(320px, 1170px, 15px);
 }
+
+.hide {
+	@include visually-hidden;
+}

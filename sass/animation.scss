@@ -24,3 +24,12 @@
     transform: rotate(-45deg) translate(-3px, 3px);
   }
 }
+
+@keyframes popups {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

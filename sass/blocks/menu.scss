@@ -46,7 +46,7 @@
 
   }
 
-  .menu__link {
+  .menu__link, a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -78,7 +78,7 @@
 
   .menu {
 
-    .menu__link {
+    .menu__link, a {
       font-weight: 400;
       padding: 16px 10px;
     }
@@ -100,7 +100,7 @@
       margin-top: 15px;
     }
 
-    .menu__link  {
+    .menu__link, a {
       padding-top: 5px;
       padding-bottom: 5px;
     }
@@ -133,7 +133,7 @@
       
     }
     
-    .menu__list {
+    .menu__list, a {
       display: block;
       animation-name: show;
       animation-duration: 500ms;

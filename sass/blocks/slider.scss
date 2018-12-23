@@ -55,12 +55,39 @@
   .slider__info {
     font-size: 18px;
     line-height: 1.667;
+
+    a {
+      font-size: 18px;
+      line-height: 1.667;
+      color: $primary;
+      font-weight: 700;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
   }
 
   .slider__warning {
     font-weight: 700;
     font-size: 14px;
     margin-top: 35px;
+
+    a {
+      font-size: 14px;
+      color: $primary;
+      font-weight: 700;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
   }
 
 }

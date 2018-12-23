@@ -39,6 +39,10 @@
 
   }
 
+  .form-error {
+    border-color: $red;
+  }
+
   textarea {
     height: 100px;
   }

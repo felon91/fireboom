@@ -7,8 +7,15 @@
   padding: 30px;
   overflow: auto;
 
+  max-width: 800px;
+  width: calc(100% - 100px);
+  display: none;
+
   .popup__wrap {
-    width: 455px;
+    //width: 455px;
+    width: 100%;
+    max-width: 800px;
+    overflow: auto;
     padding: 20px;
     box-sizing: border-box;
     background-color: $white;
@@ -61,7 +68,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    button {
+    button, a {
       width: calc(50% - 8.5px);
       margin-bottom: 17px;
       margin-top: 17px;
@@ -85,9 +92,14 @@
   }
 
   .popup__wrap {
+
+    max-width: 800px;
+    width: 100%;
+    max-height: 100%;
+
     padding: 0;
     @include adaptive-video;
-    padding-bottom: 44%;
+    padding-bottom: 56.25%;
     height: 100%;
     overflow: inherit;
     border-radius: 0;
@@ -97,17 +109,28 @@
 }
 
 .popup--product {
-  display: none;
+
+  .popup__close {
+    right: 0;
+    top: 0;
+  }
+
+}
+
+.popup--active {
+  display: block;
+  animation-name: popups;
+  animation-duration: 500ms;
 }
 
 @media (max-width: 580px) {
 
   .popup {
-    width: 75%;
+    //width: 75%;
 
-    .popup__wrap {
-      width: auto;
-    }
+    //.popup__wrap {
+    //  width: auto;
+    //}
 
     p {
       font-size: 24px;
@@ -123,7 +146,7 @@
 
     .popup__buttons {
 
-      button {
+      button, a {
         width: 100%;
         margin: 7px 0;
 
@@ -139,15 +162,15 @@
 
 }
 
-@media (max-height: 360px) {
-
-  .popup {
-    height: 250px;
-    box-sizing: border-box;
-  }
-
-  .popup--video {
-    height: auto;
-  }
-
-}
+//@media (max-height: 360px) {
+//
+//  .popup {
+//    height: 250px;
+//    box-sizing: border-box;
+//  }
+//
+//  .popup--video {
+//    height: auto;
+//  }
+//
+//}

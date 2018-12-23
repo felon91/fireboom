@@ -17,8 +17,7 @@
 
 @mixin adaptive-video() {
   position: relative;
-  padding-bottom: 44%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
-  padding-top: 30px;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
   height: 0;
   overflow: hidden;
 
@@ -105,13 +104,11 @@
   }
 
   &:focus {
-    color: darken($primary, 15%);
     border-color: darken($primary, 15%);
   }
 
   &:active {
     border-color: darken($primary, 5%);
-    color: darken($primary, 5%);
   }
 
 }
