@@ -14,9 +14,17 @@
     padding: 5px 15px;
   }
 
+  .header__info {
+    margin: 0 25px;
+  }
+
   .header__phone {
     padding-left: 35px;
-    margin: 0 25px;
+  }
+
+  .header__day-and-night {
+    font-size: 14px;
+    margin: 0;
   }
 
 }
@@ -36,7 +44,7 @@
       display: none;
     }
 
-    .header__phone {
+    .header__info {
       margin-left: 0;
       margin-right: 10px;
     }
