@@ -31,6 +31,11 @@
 
   }
 
+  .slider__left--present {
+    background: url('../img/giftbox.svg') right calc(100% - 35px) no-repeat;
+    background-size: 78px;
+  }
+
   .slider__right {
     flex-basis: 50%;
   }
